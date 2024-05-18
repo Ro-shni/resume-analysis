@@ -86,6 +86,10 @@ connection = pymysql.connect(
     port=port
 )
 
+#connection = pymysql.connect(host=st.secrets.db_credintials.host,user=st.secrets.db_credintials.username, password=st.secrets.db_credintials.password,database=st.secrets.db_credintials.database)
+#connection = pymysql.connect(host="192.168.137.1",user="root", password="@Swaruparam12",database="resume")
+#connection = pymysql.connect(**st.secrets.db_credintials)
+
 cursor = connection.cursor()
 
 # Function to insert data into the database
