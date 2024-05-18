@@ -70,11 +70,7 @@ def course_recommender(course_list):
     return rec_course
 
 # Database connection
-<<<<<<< HEAD
 connection = pymysql.connect(host="192.168.137.1",user="root", password="@Swaruparam12",database="resume")
-=======
-connection = pymysql.connect(host='192.168.137.1',user='root', password='@Swaruparam12',database='resume')
->>>>>>> 5c8fd77b385547d0d62a61d0d8fafa0946509fa5
 cursor = connection.cursor()
 
 # Function to insert data into the database
