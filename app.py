@@ -69,8 +69,7 @@ def course_recommender(course_list):
     return rec_course
 
 # Database connection
-mysql_secrets = st.secrets["connections.mysql"]
-
+mysql_secrets = st.secrets["db_credentials"]
 host = mysql_secrets["host"]
 port = mysql_secrets["port"]
 database = mysql_secrets["database"]
