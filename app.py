@@ -23,7 +23,6 @@ import pymysql
 import pafy
 import plotly.express as px
 from Courses import ds_course,web_course,android_course,ios_course,uiux_course, resume_videos, interview_videos
-from sqlalchemy import create_engine,text
 
 # Function to fetch YouTube video title
 def fetch_yt_video(link):
