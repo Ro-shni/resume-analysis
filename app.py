@@ -82,13 +82,8 @@ connection = pymysql.connect(
     host=host,
     user=username,
     password=password,
-    database=database,
-    connect_timeout=40
+    database=database
 )
-if connection:
-    st.write("Database connection established successfully.")
-else:
-    st.error("Could not connect to the database. Please check your connection parameters and try again.")
   
 #connection = pymysql.connect(host=st.secrets.db_credintials.host,user=st.secrets.db_credintials.username, password=st.secrets.db_credintials.password,database=st.secrets.db_credintials.database)
 #connection = pymysql.connect(host="192.168.137.1",user="root", password="@Swaruparam12",database="resume")
